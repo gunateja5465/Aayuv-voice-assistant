@@ -45,6 +45,7 @@ def respond(x):
         print(voice_data)
         if 'stop' in voice_data:
             pc.say('Thankyou sir!')
+            pc.runAndWait()
             print('thanku')
             x=False
         elif 'I love you' in voice_data:
